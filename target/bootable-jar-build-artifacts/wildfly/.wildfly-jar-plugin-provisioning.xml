@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<installation xmlns="urn:jboss:galleon:provisioning:3.0">
+    <feature-pack location="wildfly@maven(org.jboss.universe:community-universe)#26.1.1.Final">
+        <default-configs inherit="false"/>
+        <packages inherit="false"/>
+    </feature-pack>
+    <feature-pack location="com.melloware:wildfly-myfaces-galleon-pack:8.26.0.Final">
+        <default-configs inherit="false"/>
+        <packages inherit="false"/>
+    </feature-pack>
+    <config model="standalone" name="standalone.xml">
+        <layers>
+            <include name="ejb-lite"/>
+            <include name="jpa"/>
+            <include name="myfaces"/>
+        </layers>
+    </config>
+    <options>
+        <option name="jboss-fork-embedded"/>
+        <option name="optional-packages" value="passive+"/>
+    </options>
+</installation>

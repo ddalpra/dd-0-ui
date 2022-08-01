@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Implementation-Title: WildFly: Bootable Jar boot
+Implementation-Version: 18.1.1.Final
+Java-Version: 1.8.0_322
+Scm-Connection: scm:git:git@github.com:wildfly/wildfly-core.git/wildfl
+ y-jar-parent/wildfly-jar-boot
+Specification-Vendor: JBoss by Red Hat
+Os-Arch: amd64
+Specification-Title: WildFly: Bootable Jar boot
+JBossAS-Release-Version: 18.1.1.Final
+Java-Vendor: Oracle Corporation
+Os-Name: Linux
+Scm-Url: https://github.com/wildfly/wildfly-core
+Implementation-Vendor: JBoss by Red Hat
+Main-Class: org.wildfly.core.jar.boot.Main
+Add-Opens: java.base/java.lang java.base/java.lang.invoke java.base/ja
+ va.lang.reflect java.base/java.io java.base/java.security java.base/j
+ ava.util java.base/java.util.concurrent java.management/javax.managem
+ ent java.naming/javax.naming
+Os-Version: 5.10.104-linuxkit
+Add-Exports: java.desktop/sun.awt java.naming/com.sun.jndi.ldap
+Scm-Revision: 57debfb038e80f2c70c1b79feeed1bf620c9f23f
+Multi-Release: true
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.4.0
+Specification-Version: 18.1
+Implementation-URL: http://www.jboss.org/wildfly-core-parent/wildfly-j
+ ar-parent/wildfly-jar-boot
+
