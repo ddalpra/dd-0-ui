@@ -26,7 +26,7 @@
 <module name="org.hibernate.search.orm" xmlns="urn:jboss:module:1.9">
 
     <resources>
-        <resource-root path="hibernate-search-orm-5.10.11.Final.jar"/>
+        <resource-root path="hibernate-search-orm-5.10.11.Final-ee9.jar"/>
     </resources>
 
     <dependencies>

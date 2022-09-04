@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jastow-2.0.10.Final.jar"/>
+        <resource-root path="jastow-jakarta-2.0.11.Final.jar"/>
     </resources>
 
     <dependencies>

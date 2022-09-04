@@ -27,7 +27,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-jsf-26.1.1.Final.jar"/>
+        <resource-root path="wildfly-jsf-jakarta-26.1.2.Final.jar"/>
     </resources>
 
     <dependencies>

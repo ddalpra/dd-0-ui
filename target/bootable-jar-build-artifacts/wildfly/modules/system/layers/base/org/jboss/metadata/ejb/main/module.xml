@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jboss-metadata-ejb-14.0.0.Final.jar"/>
+        <resource-root path="jboss-metadata-ejb-jakarta-14.0.0.Final.jar"/>
     </resources>
 
     <dependencies>

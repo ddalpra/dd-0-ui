@@ -26,10 +26,10 @@
     </properties>
 
     <resources>
-        <resource-root path="netty-transport-native-unix-common-4.1.76.Final-linux-x86_64.jar"/>
-        <resource-root path="netty-transport-native-unix-common-4.1.76.Final-linux-aarch_64.jar"/>
-        <resource-root path="netty-transport-native-unix-common-4.1.76.Final-osx-x86_64.jar"/>
-        <resource-root path="netty-transport-native-unix-common-4.1.76.Final-osx-aarch_64.jar"/>
+        <resource-root path="netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar"/>
+        <resource-root path="netty-transport-native-unix-common-4.1.79.Final-linux-aarch_64.jar"/>
+        <resource-root path="netty-transport-native-unix-common-4.1.79.Final-osx-x86_64.jar"/>
+        <resource-root path="netty-transport-native-unix-common-4.1.79.Final-osx-aarch_64.jar"/>
     </resources>
 
     <dependencies>

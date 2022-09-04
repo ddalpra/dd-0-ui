@@ -26,14 +26,14 @@
     </properties>
 
     <resources>
-        <resource-root path="istack-commons-runtime-3.0.12.jar"/>
-        <resource-root path="istack-commons-tools-3.0.12.jar"/>
+        <resource-root path="istack-commons-runtime-4.0.1.jar"/>
+        <resource-root path="istack-commons-tools-4.0.1.jar"/>
         <resource-root path="rngom-2.3.3-b02.jar"/>
         <resource-root path="relaxng-datatype-2.3.3-b02.jar"/>
         <resource-root path="codemodel-2.3.3-b02.jar"/>
-        <resource-root path="jaxb-jxc-2.3.3-b02.jar"/>
-        <resource-root path="jaxb-runtime-2.3.3-b02.jar"/>
-        <resource-root path="jaxb-xjc-2.3.3-b02.jar"/>
+        <resource-root path="jaxb-jxc-2.3.3-b02-ee9.jar"/>
+        <resource-root path="jaxb-runtime-2.3.3-b02-ee9.jar"/>
+        <resource-root path="jaxb-xjc-2.3.3-b02-jbossorg-1-ee9.jar"/>
         <resource-root path="xsom-2.3.3-b02.jar"/>
         <resource-root path="txw2-2.3.3-b02.jar"/>
     </resources>

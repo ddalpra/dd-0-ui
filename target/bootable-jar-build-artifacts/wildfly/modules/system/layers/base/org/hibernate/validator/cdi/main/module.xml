@@ -23,7 +23,7 @@
 <module name="org.hibernate.validator.cdi" xmlns="urn:jboss:module:1.9">
 
   <resources>
-    <resource-root path="hibernate-validator-cdi-6.0.23.Final.jar"/>
+    <resource-root path="hibernate-validator-cdi-7.0.2.Final.jar"/>
   </resources>
 
   <dependencies>

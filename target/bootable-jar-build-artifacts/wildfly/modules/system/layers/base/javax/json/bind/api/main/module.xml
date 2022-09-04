@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2018 Red Hat, Inc.
+  ~ Copyright 2020 Red Hat, Inc.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,18 +14,4 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<module name="javax.json.bind.api" xmlns="urn:jboss:module:1.9">
-
-    <properties>
-        <property name="jboss.api" value="public"/>
-    </properties>
-
-    <resources>
-        <resource-root path="jakarta.json.bind-api-1.0.2.jar"/>
-    </resources>
-
-    <dependencies>
-        <module name="java.logging"/>
-        <module name="javax.json.api"/>
-    </dependencies>
-</module>
+<module-alias name="javax.json.bind.api" target-name="jakarta.json.bind.api" xmlns="urn:jboss:module:1.9"/>

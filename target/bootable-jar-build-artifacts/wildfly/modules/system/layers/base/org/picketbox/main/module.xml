@@ -27,8 +27,8 @@
     </properties>
 
     <resources>
-        <resource-root path="picketbox-5.0.3.Final-redhat-00008.jar"/>
-        <resource-root path="picketbox-infinispan-5.0.3.Final-redhat-00008.jar"/>
+        <resource-root path="picketbox-5.0.3.Final-redhat-00008-ee9.jar"/>
+        <resource-root path="picketbox-infinispan-5.0.3.Final-redhat-00008-ee9.jar"/>
         <resource-root path="picketbox-commons-1.0.0.final.jar"/>
     </resources>
 

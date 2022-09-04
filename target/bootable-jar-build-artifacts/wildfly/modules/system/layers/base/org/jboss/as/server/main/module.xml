@@ -29,7 +29,7 @@
     <main-class name="org.jboss.as.server.DomainServerMain"/>
 
     <resources>
-        <resource-root path="wildfly-server-18.1.1.Final.jar"/>
+        <resource-root path="wildfly-server-18.1.2.Final.jar"/>
     </resources>
 
     <dependencies>

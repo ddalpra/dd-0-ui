@@ -27,7 +27,7 @@
     </properties>
 
     <resources>
-        <resource-root path="infinispan-cachestore-jdbc-common-13.0.10.Final.jar"/>
+        <resource-root path="infinispan-cachestore-jdbc-common-13.0.10.Final-ee9.jar"/>
         <resource-root path="infinispan-cachestore-jdbc-13.0.10.Final.jar"/>
     </resources>
 

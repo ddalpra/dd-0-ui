@@ -29,7 +29,7 @@
     <main-class name="org.jboss.as.cli.CommandLineMain"/>
 
     <resources>
-        <resource-root path="wildfly-cli-18.1.1.Final.jar"/>
+        <resource-root path="wildfly-cli-18.1.2.Final.jar"/>
     </resources>
 
     <exports>

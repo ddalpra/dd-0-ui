@@ -22,7 +22,7 @@
   -->
 <module name="io.undertow.servlet" xmlns="urn:jboss:module:1.9">
     <resources>
-        <resource-root path="undertow-servlet-2.2.17.Final.jar"/>
+        <resource-root path="undertow-servlet-jakarta-2.2.19.Final-ee9.jar"/>
     </resources>
 
     <dependencies>

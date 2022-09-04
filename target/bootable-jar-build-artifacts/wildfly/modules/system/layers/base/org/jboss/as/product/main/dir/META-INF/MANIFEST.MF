@@ -1,2 +1,2 @@
-JBoss-Product-Release-Name: WildFly Full
-JBoss-Product-Release-Version: 26.1.1.Final
+JBoss-Product-Release-Name: WildFly Preview
+JBoss-Product-Release-Version: 26.1.2.Final

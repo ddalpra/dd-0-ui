@@ -30,7 +30,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-elytron-jaspi-1.19.0.Final.jar"/>
+        <resource-root path="jakarta-authentication-2.0.0.Beta1.jar"/>
     </resources>
 
     <dependencies>

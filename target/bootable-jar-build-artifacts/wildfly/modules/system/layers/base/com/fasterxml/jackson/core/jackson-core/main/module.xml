@@ -22,7 +22,7 @@
   -->
 <module name="com.fasterxml.jackson.core.jackson-core" xmlns="urn:jboss:module:1.9">
      <resources>
-        <resource-root path="jackson-core-2.12.6.jar"/>
+        <resource-root path="jackson-core-2.12.7.jar"/>
     </resources>
 
     <dependencies>

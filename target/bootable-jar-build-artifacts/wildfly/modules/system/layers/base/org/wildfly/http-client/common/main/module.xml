@@ -23,7 +23,7 @@
 <module name="org.wildfly.http-client.common" xmlns="urn:jboss:module:1.9">
 
     <resources>
-        <resource-root path="wildfly-http-client-common-1.1.11.Final.jar"/>
+        <resource-root path="wildfly-http-client-common-1.1.12.Final.jar"/>
     </resources>
 
     <dependencies>

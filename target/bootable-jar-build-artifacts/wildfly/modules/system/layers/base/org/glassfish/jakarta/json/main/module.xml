@@ -2,7 +2,7 @@
 <!--
   ~ JBoss, Home of Professional Open Source.
   ~
-  ~ Copyright 2019 Red Hat, Inc., and individual contributors
+  ~ Copyright 2020 Red Hat, Inc., and individual contributors
   ~ as indicated by the @author tags.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,17 +17,17 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
+<!-- TODO Consider dropping direct dep on core-galleon-pack and instead using
+     a source dep, eliminating the need to re-provision this just to get a
+     different version. -->
 <module name="org.glassfish.jakarta.json" xmlns="urn:jboss:module:1.9">
 
     <properties>
         <property name="jboss.api" value="private"/>
     </properties>
 
-    <dependencies>
-        <module name="javax.json.api"/>
-    </dependencies>
     <resources>
-        <resource-root path="jakarta.json-1.1.6.jar">
+        <resource-root path="jakarta.json-2.0.0.jar">
             <filter>
                 <!-- This artifact packages both the API and the impl in the same jar,
                      but we want to use our own API jar (see javax.json.api module).
@@ -39,4 +39,8 @@
             </filter>
         </resource-root>
     </resources>
+
+    <dependencies>
+        <module name="javax.json.api"/>
+    </dependencies>
 </module>

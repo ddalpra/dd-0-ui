@@ -1,14 +1,14 @@
 Manifest-Version: 1.0
 Implementation-Title: WildFly: Bootable Jar boot
-Implementation-Version: 18.1.1.Final
-Java-Version: 1.8.0_322
+Implementation-Version: 18.1.2.Final
+Java-Version: 1.8.0_345
 Scm-Connection: scm:git:git@github.com:wildfly/wildfly-core.git/wildfl
  y-jar-parent/wildfly-jar-boot
 Specification-Vendor: JBoss by Red Hat
 Os-Arch: amd64
 Specification-Title: WildFly: Bootable Jar boot
-JBossAS-Release-Version: 18.1.1.Final
-Java-Vendor: Oracle Corporation
+JBossAS-Release-Version: 18.1.2.Final
+Java-Vendor: Red Hat, Inc.
 Os-Name: Linux
 Scm-Url: https://github.com/wildfly/wildfly-core
 Implementation-Vendor: JBoss by Red Hat
@@ -17,9 +17,10 @@ Add-Opens: java.base/java.lang java.base/java.lang.invoke java.base/ja
  va.lang.reflect java.base/java.io java.base/java.security java.base/j
  ava.util java.base/java.util.concurrent java.management/javax.managem
  ent java.naming/javax.naming
-Os-Version: 5.10.104-linuxkit
-Add-Exports: java.desktop/sun.awt java.naming/com.sun.jndi.ldap
-Scm-Revision: 57debfb038e80f2c70c1b79feeed1bf620c9f23f
+Os-Version: 5.18.17-200.fc36.x86_64
+Add-Exports: java.desktop/sun.awt java.naming/com.sun.jndi.ldap java.n
+ aming/com.sun.jndi.url.ldap java.naming/com.sun.jndi.url.ldaps
+Scm-Revision: 1e5dc2c3a0659427417911603cfe8326b5fe0420
 Multi-Release: true
 Build-Jdk-Spec: 1.8
 Created-By: Maven Archiver 3.4.0

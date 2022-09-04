@@ -22,7 +22,7 @@
   -->
 <module name="org.jboss.remoting" xmlns="urn:jboss:module:1.9">
     <resources>
-        <resource-root path="jboss-remoting-5.0.24.Final.jar"/>
+        <resource-root path="jboss-remoting-5.0.25.Final.jar"/>
     </resources>
 
     <dependencies>

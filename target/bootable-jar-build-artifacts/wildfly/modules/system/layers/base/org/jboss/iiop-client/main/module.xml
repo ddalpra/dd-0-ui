@@ -27,7 +27,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jboss-iiop-client-1.0.1.Final.jar"/>
+        <resource-root path="jboss-iiop-client-1.0.1.Final-ee9.jar"/>
     </resources>
 
     <dependencies>

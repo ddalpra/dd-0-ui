@@ -31,7 +31,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-clustering-server-26.1.1.Final.jar"/>
+        <resource-root path="wildfly-clustering-server-26.1.2.Final.jar"/>
     </resources>
 
     <dependencies>

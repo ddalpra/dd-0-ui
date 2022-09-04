@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="undertow-websockets-jsr-2.2.17.Final.jar"/>
+        <resource-root path="undertow-websockets-jsr-jakarta-2.2.19.Final.jar"/>
     </resources>
 
     <dependencies>

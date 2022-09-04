@@ -26,7 +26,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jakarta.enterprise.concurrent-1.1.1.jar"/>
+        <resource-root path="jakarta.enterprise.concurrent-2.0.0.jar"/>
     </resources>
 
     <dependencies>

@@ -23,7 +23,7 @@
 <module name="org.hibernate.validator" xmlns="urn:jboss:module:1.9">
 
   <resources>
-    <resource-root path="hibernate-validator-6.0.23.Final.jar"/>
+    <resource-root path="hibernate-validator-7.0.2.Final.jar"/>
   </resources>
 
   <dependencies>
@@ -38,7 +38,7 @@
     <module name="org.jboss.weld.core"/>
     <module name="org.jboss.weld.spi"/>
     <module name="org.joda.time"/>
-    <module name="org.jsoup"/>
+    <module name="org.jsoup" optional="true"/>
     <module name="org.apache.xerces" services="import"/>
     <module name="sun.jdk" services="import"/>
     <module name="java.xml"/>

@@ -27,6 +27,6 @@
         <module name="javax.json.bind.api"/>
     </dependencies>
     <resources>
-        <resource-root path="yasson-1.0.10.jar"/>
+        <resource-root path="yasson-2.0.4.jar"/>
     </resources>
 </module>

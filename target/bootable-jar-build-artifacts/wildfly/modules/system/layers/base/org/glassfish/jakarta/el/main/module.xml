@@ -27,7 +27,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jakarta.el-3.0.3.jbossorg-4.jar">
+        <resource-root path="jakarta.el-4.0.0.jar">
             <filter>
                 <!-- This artifact packages both the API and the impl in the same jar,
                      but we want to use our own API jar (see javax.el.api module).

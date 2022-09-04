@@ -23,7 +23,7 @@
 <module name="io.undertow.js" xmlns="urn:jboss:module:1.9">
 
     <resources>
-        <resource-root path="undertow-js-1.0.2.Final.jar"/>
+        <resource-root path="undertow-js-1.0.2.Final-ee9.jar"/>
     </resources>
 
     <dependencies>

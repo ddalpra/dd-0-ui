@@ -27,7 +27,7 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-weld-transactions-26.1.1.Final.jar"/>
+        <resource-root path="wildfly-weld-transactions-jakarta-26.1.2.Final.jar"/>
     </resources>
 
     <dependencies>

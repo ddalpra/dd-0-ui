@@ -24,7 +24,7 @@
 
     <resources>
         <resource-root path="lib"/>
-        <resource-root path="artemis-commons-2.19.1.jar"/>
+        <resource-root path="artemis-commons-2.19.1-ee9.jar"/>
         <resource-root path="artemis-journal-2.19.1.jar"/>
         <resource-root path="activemq-artemis-native-1.0.2.jar"/>
     </resources>

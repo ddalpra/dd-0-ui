@@ -27,7 +27,7 @@
 
     <resources>
         <resource-root path="dir"/>
-        <resource-root path="wildfly-controller-18.1.1.Final.jar"/>
+        <resource-root path="wildfly-controller-18.1.2.Final.jar"/>
     </resources>
 
     <dependencies>

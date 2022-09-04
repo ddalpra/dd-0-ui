@@ -27,7 +27,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jboss-invocation-1.7.0.Final.jar"/>
+        <resource-root path="jboss-invocation-jakarta-1.7.0.Final.jar"/>
     </resources>
 
     <dependencies>

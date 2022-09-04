@@ -24,7 +24,7 @@
   -->
 <module name="org.wildfly.extension.core-management-client" xmlns="urn:jboss:module:1.9">
     <resources>
-        <resource-root path="wildfly-core-management-client-18.1.1.Final.jar"/>
+        <resource-root path="wildfly-core-management-client-18.1.2.Final.jar"/>
     </resources>
     <dependencies>
     </dependencies>
