@@ -364,7 +364,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="dd-0-ui.war" runtime-name="ROOT.war">
-            <content sha1="e4f1b3c2216c7e726ff88523ca0c7ed406b37418"/>
+            <content sha1="e01d5df27097a134340057c69310aec3f0ee9c53"/>
         </deployment>
     </deployments>
 </server>
