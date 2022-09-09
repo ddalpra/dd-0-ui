@@ -3,7 +3,7 @@ services:
   postgres:
       image: postgres
       volumes:
-        - /home/ddalpra/database:/var/lib/postgresql/data
+        - /home/ddalpra/database/pgstore:/var/lib/postgresql/data
       environment:
         POSTGRES_DB: keycloak
         POSTGRES_USER: keycloak
@@ -25,3 +25,11 @@ services:
         - 8080:8080
       depends_on:
         - postgres
+  dd-0-ui:
+      image: ddalpra86/dd-0-ui:0.0.1-snapshot
+      ports:
+        - 8082:8080
+      depends_on:
+        - keycloak
+
+
