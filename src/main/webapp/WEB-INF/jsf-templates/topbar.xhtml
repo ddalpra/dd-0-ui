@@ -11,6 +11,26 @@
       xmlns:p="http://primefaces.org/ui">
 
     <div class="layout-topbar">
-        
+         <a class="menu-button" tabindex="0">
+            <i class="pi pi-bars"></i>
+        </a>
+        <h:link styleClass="logo" outcome="/index.xhtml">
+            <p:graphicImage name="images/primefaces-logo.svg" library="showcase" />
+        </h:link>
+        <p:outputPanel id="app-theme-logo" class="app-theme">
+            <p:graphicImage id="app-theme-image" name="images/themes/saga.png" library="showcase" />
+            <p:tooltip for="app-theme-logo" value="saga" position="bottom" showDelay="0" />
+        </p:outputPanel>
+
+        <h:form styleClass="topbar-form">
+        <ul class="topbar-menu">
+            <li class="topbar-submenu">
+                <a tabindex="0">Daniele Dal Prà</a>
+                <ul class="connected-overlay-in" style="width: 100%">
+                    <li><a href="https://www.primefaces.org/showcase-v8/"><span>v8</span></a></li>
+                </ul>
+            </li>
+        </ul>
+        </h:form>
     </div>
 </ui:composition>
