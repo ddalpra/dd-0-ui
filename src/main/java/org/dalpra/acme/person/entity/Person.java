@@ -1,6 +1,8 @@
 package org.dalpra.acme.person.entity;
 
 public class Person {
+
+    private int id;
     private String firstname;
     private String lastname;
     private String username;
@@ -16,6 +18,13 @@ public class Person {
         this.email = email;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
