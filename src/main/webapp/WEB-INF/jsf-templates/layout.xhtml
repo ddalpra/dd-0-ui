@@ -15,12 +15,15 @@
     <h:head>
         <title>${title}</title>
 
-        <h:outputStylesheet name="css/primeflex.css" library="showcase"/>
+        <h:outputStylesheet name="css/primeflex2.css" library="showcase"/><!-- classic PrimeFlex 2 for backward-compatibility -->
+        <h:outputStylesheet name="css/primeflex3.css" library="showcase"/><!-- latest primeflex -->
         <h:outputStylesheet name="css/flags/flags.css" library="showcase"/>
 
         <h:outputScript name="jquery/jquery.js" library="primefaces"/>
         <h:outputScript name="jquery/jquery-plugins.js" library="primefaces"/>
-        
+        <h:outputScript name="locales/locale-#{app.locale.language}.js" library="primefaces"/>
+
+
         <ui:insert name="head"/>
         
     </h:head>
@@ -108,10 +111,11 @@
 
         <ui:insert name="body"></ui:insert>
 
-        <h:outputStylesheet name="css/layout/layout.css" library="showcase"/>
-        <h:outputScript name="script/layout.js" library="showcase" />
+            <h:outputStylesheet name="css/layout/layout.css" library="showcase"/>
+            <h:outputScript name="script/layout.js" library="showcase" />
+            <h:outputScript name="showcase/script/prism.js" />
             <h:outputScript name="script/dalpra.js" library="showcase" />
-        <h:outputScript name="showcase/script/prism.js" />
+
         </f:view>
     </h:body>
 

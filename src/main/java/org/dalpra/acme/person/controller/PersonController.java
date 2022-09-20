@@ -1,10 +1,12 @@
 package org.dalpra.acme.person.controller;
 
 import jakarta.enterprise.context.SessionScoped;
+import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.client.Invocation;
 import jakarta.ws.rs.core.GenericType;
 import jakarta.ws.rs.core.MediaType;
@@ -76,5 +78,19 @@ public class PersonController implements Serializable {
         this.person = person;
     }
 
+    public void salvaPerson(){
+        FacesMessage msg;
+        ResteasyClient client = (ResteasyClient)ClientBuilder.newClient();
+        ResteasyWebTarget target = client.target(BASE_URL+"person/");
+        Response response = target.request()
+                .post(Entity.entity(person, "application/json"));
+
+        int statoInsert = response.getStatus();
+
+        msg = new FacesMessage("Stato inserimento " + statoInsert);
+        //System.out.println(response.getStatus());
+        response.close();
+        FacesContext.getCurrentInstance().addMessage(null, msg);
+    }
 
 }

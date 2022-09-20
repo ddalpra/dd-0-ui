@@ -17,55 +17,27 @@
     <ui:define name="content">
         <h:form>
             <div class="card">
-                <h5>Anagrafica Persona.</h5>
-
-                <!--
-                Note: Rows and columns can have style, styleClass, and id.
-                Note: A column with a defined styleClass will ignore the styleClass specified in the columnClasses list.
-                Note: Note the use of ui-fluid to ensure that components are sized correctly and the use of ui-panelgrid-blank to remove borders.
-                -->
-                <p:panelGrid columns="4"
-                             columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
-                             layout="grid"
-                             styleClass="ui-panelgrid-blank ui-fluid"
-                             style="border:0px none; background-color:transparent;">
-
-                    <p:row styleClass="my-heading-row">
-                        Anagrafica
-                    </p:row>
-
-                    <span class="ui-float-label">
-                        <p:inputText id="firstname" value="#{personController.person.firstname}"/>
-                        <p:outputLabel for="@previous" value="Nome"/>
-                    </span>
-
-                    <span class="ui-float-label">
+                <h5>Anagrafica Persona</h5>
+                <p:growl id="msgs" showDetail="true" skipDetailIfEqualsSummary="true"/>
+                <div class="ui-fluid formgrid grid">
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="firstname" value="Nome"/>
+                        <p:inputText id="firstname"  value="#{personController.person.firstname}"/>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="lastname" value="Cognome"/>
                         <p:inputText id="lastname" value="#{personController.person.lastname}"/>
-                        <p:outputLabel for="@previous" value="Cognome"/>
-                    </span>
-
-                    <span class="ui-float-label">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="username" value="Username"/>
                         <p:inputText id="username" value="#{personController.person.username}"/>
-                        <p:outputLabel for="@previous" value="Username"/>
-                    </span>
-
-                    <p:row id="my-row-id" styleClass="my-heading-row" style="font-weight: bold">
-                        E-Mail
-                    </p:row>
-
-                    <span class="ui-float-label">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="email" value="Email"/>
                         <p:inputText id="email" value="#{personController.person.email}"/>
-                        <p:outputLabel for="@previous" value="e-mail"/>
-                    </span>
-
-                    <p:row>
-                        <p:column styleClass="ui-grid-col-12">
-                            <p:commandButton value="Accept" styleClass="rounded-button ui-button-warning" style="width: auto"/>
-                            <p:commandButton value="Reject" styleClass="rounded-button ui-button-success" style="width: auto"/>
-                            <p:commandButton value="Refer" styleClass="rounded-button ui-button-secondary" style="width: auto" />
-                        </p:column>
-                    </p:row>
-                </p:panelGrid>
+                    </div>
+                </div>
+                <p:commandButton value="Salva" action="#{personController.salvaPerson}" update="msgs" styleClass="mt-3"/>
             </div>
 
         </h:form>
