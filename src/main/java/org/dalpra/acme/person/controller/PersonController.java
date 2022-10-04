@@ -11,6 +11,7 @@ import jakarta.ws.rs.client.Invocation;
 import jakarta.ws.rs.core.GenericType;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import net.bytebuddy.implementation.bind.MethodDelegationBinder;
 import org.dalpra.acme.person.entity.Person;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
@@ -23,12 +24,14 @@ import java.util.List;
 public class PersonController implements Serializable {
     private List<Person> personList;
     private Person person;
+
     private transient Client client;
     static String BASE_URL = "http://localhost:9000/";
 
+
     public PersonController() {
         FacesContext fc = FacesContext.getCurrentInstance();
-
+        person = new Person();
     }
 
     public List<Person> getPersonList() {
@@ -79,11 +82,16 @@ public class PersonController implements Serializable {
     }
 
     public void salvaPerson(){
+
+
         FacesMessage msg;
         ResteasyClient client = (ResteasyClient)ClientBuilder.newClient();
         ResteasyWebTarget target = client.target(BASE_URL+"person/");
+
         Response response = target.request()
-                .post(Entity.entity(person, "application/json"));
+                .post(Entity.json(person));
+
+        System.out.println(Entity.json(person));
 
         int statoInsert = response.getStatus();
 
@@ -92,5 +100,7 @@ public class PersonController implements Serializable {
         response.close();
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
+
+
 
 }

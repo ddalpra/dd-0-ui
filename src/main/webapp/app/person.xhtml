@@ -22,7 +22,7 @@
                 <div class="ui-fluid formgrid grid">
                     <div class="field col-12 md:col-6">
                         <p:outputLabel for="firstname" value="Nome"/>
-                        <p:inputText id="firstname"  value="#{personController.person.firstname}"/>
+                        <p:inputText id="firstname" name="firstname" value="#{personController.person.firstname}"/>
                     </div>
                     <div class="field col-12 md:col-6">
                         <p:outputLabel for="lastname" value="Cognome"/>
@@ -37,7 +37,8 @@
                         <p:inputText id="email" value="#{personController.person.email}"/>
                     </div>
                 </div>
-                <p:commandButton value="Salva" action="#{personController.salvaPerson}" update="msgs" styleClass="mt-3"/>
+                <p:commandButton value="Salva" action="#{personController.salvaPerson()}" update="msgs" styleClass="mt-3"/>
+
             </div>
 
         </h:form>

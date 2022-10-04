@@ -9,6 +9,7 @@ public class Person {
     private String email;
 
     public Person(){
+        id = 0;
     }
 
     public Person(String firstname, String lastname, String username, String email) {
@@ -16,6 +17,14 @@ public class Person {
         this.lastname = lastname;
         this.username = username;
         this.email = email;
+    }
+
+    public Person(int id, String firstname, String lastname, String username, String email) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.username = username;
+        this.email = email;
+        this.id = id;
     }
 
     public int getId() {
@@ -55,5 +64,16 @@ public class Person {
 
     public String getEmail() {
         return email;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
