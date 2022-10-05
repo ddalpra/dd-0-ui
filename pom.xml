@@ -46,7 +46,6 @@
             <artifactId>resteasy-json-binding-provider</artifactId>
             <version>6.1.0.Final</version>
         </dependency>
-
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>

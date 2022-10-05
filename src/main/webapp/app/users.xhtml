@@ -17,7 +17,7 @@
     <ui:define name="content">
         <h:form>
             <div class="card">
-                <p:button icon="pi pi-bookmark" styleClass="rounded-button ui-button-secondary" value="Secondary" outcome="person.xhtml"/>
+                <p:button icon="pi pi-bookmark" styleClass="rounded-button ui-button-secondary" value="Secondary" outcome="user.xhtml"/>
                 <p:dataTable var="user" value="#{userController.userList}">
                     <p:column headerText="Nome">
                         <h:outputText value="#{user.firstName}" />

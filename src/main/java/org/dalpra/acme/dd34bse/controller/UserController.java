@@ -1,9 +1,12 @@
 package org.dalpra.acme.dd34bse.controller;
 
 import jakarta.enterprise.context.SessionScoped;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.client.Invocation;
 import jakarta.ws.rs.core.GenericType;
 import jakarta.ws.rs.core.Response;
@@ -23,6 +26,11 @@ public class UserController implements Serializable {
     private User user;
     private transient Client client;
     static String BASE_URL = "http://localhost:9000/";
+
+    public UserController(){
+        FacesContext fc = FacesContext.getCurrentInstance();
+        user = new User();
+    }
 
     public List<User> getUserList() {
         ResteasyClient client = (ResteasyClient) ClientBuilder.newClient();
@@ -54,5 +62,23 @@ public class UserController implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public void salvaUser(){
+        FacesMessage msg;
+        ResteasyClient client = (ResteasyClient)ClientBuilder.newClient();
+        ResteasyWebTarget target = client.target(BASE_URL+"api/users");
+
+        Response response = target.request()
+                .post(Entity.json(user));
+
+        System.out.println(Entity.json(user));
+
+        int statoInsert = response.getStatus();
+
+        msg = new FacesMessage("Stato inserimento " + statoInsert);
+        //System.out.println(response.getStatus());
+        response.close();
+        FacesContext.getCurrentInstance().addMessage(null, msg);
     }
 }

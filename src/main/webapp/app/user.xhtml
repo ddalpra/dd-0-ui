@@ -1,0 +1,44 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+        xmlns:fn="http://xmlns.jcp.org/jsp/jstl/functions"
+        xmlns:jsf="http://xmlns.jcp.org/jsf"
+        xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+        xmlns:o="http://omnifaces.org/ui"
+        xmlns:of="http://omnifaces.org/functions"
+        xmlns:p="http://primefaces.org/ui"
+        template="/WEB-INF/jsf-templates/layout.xhtml">
+
+    <ui:param name="title" value="Person"/>
+
+    <ui:define name="content">
+        <h:form>
+            <div class="card">
+                <h5>Anagrafica User</h5>
+                <p:growl id="msgs" showDetail="true" skipDetailIfEqualsSummary="true"/>
+                <div class="ui-fluid formgrid grid">
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="firstname" value="Nome"/>
+                        <p:inputText id="firstname" name="firstname" value="#{userController.user.firstName}"/>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="lastname" value="Cognome"/>
+                        <p:inputText id="lastname" value="#{userController.user.lastName}"/>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <p:outputLabel for="username" value="Username"/>
+                        <p:inputText id="username" value="#{userController.user.emailId}"/>
+                    </div>
+
+                </div>
+                <p:commandButton value="Salva" action="#{userController.salvaUser()}" update="msgs" styleClass="mt-3"/>
+
+            </div>
+
+        </h:form>
+    </ui:define>
+
+</ui:composition>
